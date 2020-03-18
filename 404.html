@@ -1,0 +1,554 @@
+
+
+
+<style>
+
+body {
+  background: #000;
+
+}
+
+.container {
+width: auto;
+overflow: hidden;
+max-width: auto;
+padding: 0 .05em;
+}
+
+.header-container {
+  position: relative;
+}
+
+#header-background {
+  position: relative;
+}
+
+#header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#header-text {
+    max-width: 750px;
+    min-height: 161px;
+    position: absolute;
+    top: 55px;
+    left: 140px;
+    background: none;
+    padding: 0px 30px 0px 30px;
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 10px 0px 0px 0px;
+    word-spacing: -1px;
+}
+
+header, .page-title {
+  display: none;
+}
+
+.header-container,
+.body-container,
+.gridwrap,
+.copyright {
+  background: #fff;
+  max-width: 978px;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+.body-container { */ wraps entire page  */
+  padding: 0em;
+}
+
+.body-content h3 {
+text-transform: none;
+font-size: 24px;
+}
+
+.inner-main { /*  main form content */
+min-height 400px;
+padding: 2em;
+}
+
+
+.action-list {
+  margin: 0;
+  padding: 0;
+}
+.action-list li {
+  list-style: none;
+  float: left;
+  clear: both;
+  margin-bottom: 10px;
+}
+.action-list li p {
+  list-style: none;
+  font-size: 24px;
+  padding-top: 20px;
+}
+.action-list li a,
+.orange-text {
+  color: #cc6600;
+  font-weight: bold;
+}
+.action-list li img {
+  float: left;
+  display: block;
+  margin-right: 35px;
+  margin-top: -13px;
+}
+
+.gridwrap {
+  padding: 0;
+  background: #e9e9e9;
+}
+
+.grid-irc-two-column-right .block {
+  background: #000;
+  margin-bottom: 30px;
+}
+.grid-irc-two-column-right .block p {
+  color: #000;
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 18px;
+}
+.sidebar-byline {
+  padding: 10px 20px;
+}
+.yellow-span {
+  color: #ffcc33;
+}
+.links  {
+  display: none;
+}
+
+.oversight-logos {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    line-height: 1.6em;
+    margin: 14px 0;
+    padding: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+#col-right {
+float: right;
+width: 300px;
+height: 550px;
+background-image: url('https://help.rescue.org/files/irc/sidebar.jpg');
+background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1060px) {
+#col-right {
+float: right;
+width: 0px;
+height: 0px;
+background-image: none;
+}
+}
+
+@media screen and (max-width: 768px) {
+ body {
+    padding: 0;
+    margin: 0;
+  }
+
+ .header-container, .body-container, .gridwrap, .copyright {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+
+.header-container {
+   padding-bottom: 0;
+   height: 132px;
+  }
+
+  #header-logo {
+    width: 100px;
+    height: auto;
+  }
+
+
+  #header-background {
+    display: none;
+  }
+
+  .header-container {
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    background: transparent url('/files/irc/signup-bg.jpg') no-repeat;
+    background-size: cover;
+    display: inline-block;
+  }
+
+  #header-text {
+    position: relative;
+    padding-left: 140px;
+    left: 0;
+    width: 100%;
+    line-height: 1.25em;
+    font-size: 3em;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+
+.action-list li {
+   padding-right: 20px;
+  }
+  .action-list img {
+    margin-right: 20px;
+  }
+
+.grid-irc-two-column-center-r  {
+padding-left: 0px;
+  }
+
+#col-right {
+float: right;
+width: 0px;
+height: 0px;
+background-image: none;
+}
+
+}
+
+@media screen and (max-width: 540px) {
+.header-container {
+     padding-bottom: 0;
+   height: 132px;
+  }
+  #header-logo {
+    width: 100px;
+    height: auto;
+  }
+
+ #header-text {
+
+    font-size: 2.5em;
+  }
+
+  .action-list img {
+    padding-bottom: 30px;
+    margin-top: 0 !important;
+  }
+
+  .action-list li {
+    padding-top: 0;
+  }
+
+  .action-list p {
+    line-height: 1.25em;
+  }
+
+.grid-irc-two-column-center-r {
+padding-left: 0px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .header-container {
+     padding-bottom: 0;
+   height: 132px;
+  }
+  #header-logo {
+    width: 100px;
+    height: auto;
+  }
+
+  #header-text {
+    top: 20px;
+    padding-left: 120px;
+    font-size: 2em;
+  }
+}
+
+.gridwrap {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.grid-color {
+  background: #f3f3f3;
+}
+
+.grid-color-wrap { background: #ffffff; }
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.grid-irc-two-column-left {
+  margin-right: 22px;
+  margin-bottom: 65px;
+  margin-left: 8px;
+  float: left;
+  /* overflow: hidden;  */
+  width: 604px;
+  position: relative;
+}
+
+.grid-irc-two-column-right {
+  margin-left: 15px;
+  width:286px !important;
+  margin-right: 0px;
+  float: left;
+  margin-top: 0;
+  box-sizing:border-box;
+  position: relative;
+  z-index: 50;
+  -moz-box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.grid-irc-two-column-center {
+  background: #e9e9e9;
+  color: #000;
+  float: left;
+  clear: both;
+}
+
+.grid-irc-two-column-center-inner {
+  padding: 15px 0px;
+  float: left;
+}
+
+.grid-irc-two-column-center-l {
+  width: 48%;
+  float: left;
+/*  border-right: solid 1px #fff; */
+  padding-right: 20px;
+ }
+
+.grid-irc-two-column-center h4 {
+   font-weight: 300;
+}
+
+
+.grid-irc-two-column-center-r {
+  width: 48%;
+  float: left;
+}
+
+.grid-irc-two-column-right-inner {
+  /* padding: 20px 0px 30px 0px; */
+}
+
+.grid-irc-two-column-center-l p {
+  line-height: 1.4em;
+}
+
+.grid-irc-two-column-center-f {
+  clear: both;
+  border-top: solid 1px #fff;
+  margin-top: 20px;
+  display: block;
+  float: left;
+  padding-top: 15px;
+}
+
+.grid-irc-two-column-center-f a {
+  font-weight: bold;
+  color: #000;
+}
+
+.grid-irc-two-column-center-f img {
+width: 40px;
+
+}
+
+.two-column-right-header {
+  position: relative;
+  z-index: 100;
+  left: -2px;
+  top: -2px;
+}
+
+.grid-irc-two-column-center-inner  {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-irc-two-column-center-inner > div {
+    width: 100%;
+    float: none;
+    border: none;
+    clear: both;
+    padding-bottom: 20px;
+  }
+
+
+}
+
+.copyright {
+  margin-bottom: 20px;
+  padding: 15px 0px 15px 15px;
+  font-size: 0.875em;
+  line-height: 1.4em;
+  background: #000;
+  color: #8d8d8d;
+}
+
+
+#case-builder input[type=text], #case-builder input[type=tel],   #case-builder select {
+    width: 100%;
+height: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+font-size: 1em;
+}
+
+#case-builder input[type=submit] {
+/*    width: 100%;*/
+    cursor: pointer;
+text-transform: uppercase;
+font-weight: bold;
+display: block;
+font-family: "akzidenz-grotesk",helvetica,arial,sans-serif !important;
+font-size: 19px;
+color: #000000;
+padding: 10px 20px;
+background: #ffcc33;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+border: 1px solid #fcca33;
+letter-spacing: -.5px;
+margin-top: 1em;
+}
+
+#case-builder input[type=submit]:hover {
+    background-color: #ffd960;
+}
+
+#case-builder div {
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#case-builder label {
+margin-top: 1em;
+font-weight: bold;
+}
+
+#case-builder textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    resize: none;
+font-family: inherit;
+}
+#case-builder .required:after { content:" *";  color: red}
+
+</style>
+
+<div class="header-container">
+	<div id="header-background"><img src="/files/irc/signup-bg.jpg"></div>
+	<div id="header-logo"><a href="http://www.rescue.org"><img src="/files/irc/logo.jpg"></a></div>
+	<div id="header-text">Page Not Found</div>
+</div> <!-- //header-container -->
+
+<div class="body-container clearfix" style="padding: 2em 0 60px 2em;">
+ <h3>We're sorry, that page does not exist.</h3>
+
+<ul class="action-list">
+<li><p><img alt="" src="/files/irc/icon_IRC_arrow.png" style="width: 48px; height: 48px;" /> Return to the <a href="http://www.rescue.org/">Rescue.org</a> homepage</p></li>
+
+<li><p><img alt="" src="/files/irc/icon_dollar_sign.png" style="width: 48px; height: 48px;" /> Donate now to <a href="https://www.rescue.org/donate">support our work</a></p></li>
+
+<li><p><img alt="" src="/files/irc/icon_globe.png" style="width: 48px; height: 48px;" /> Read the <a href="http://www.rescue.org/news">latest news</a> from the IRC</p></li>
+
+<li><p><img alt="" src="/files/irc/icon_gift.png" style="width: 48px; height: 48px;" /> Give a <a href="http://gifts.rescue.org/">Rescue Gift</a></p></li>
+
+<li><p><img alt="" src="/files/irc/icon_megaphone.png" style="width: 48px; height: 48px;" /> Learn more about <a href="http://www.rescue.org/how-you-can-help">how you can help</a></p></li>
+</ul>
+ </div>
+
+<div class="gridwrap clearfix">
+<div class="grid-irc-two-column-center" style="clear: left;">
+	 <div class="grid-irc-two-column-center-inner">
+
+		<div class="grid-irc-two-column-center-l">
+
+			<h4>Our efficiency maximizes your gift's impact</h4>
+			<p><img alt="89% to programs, 7% to administration, 4% to fundraising." class="efficiency-img" style="margin: .5em 0" src="/files/irc/upload/irc-efficiency.png"><br> <span style="font-weight: bold">89 cents</span> of every dollar we spend worldwide goes directly to help refugees and others in desperate need. </p>
+		</div>
+
+		<div class="grid-irc-two-column-center-r">
+
+
+
+				<h4 id="ratings">IRC has earned the highest ratings from:</h4>
+
+					<div id="trust">
+
+<p class="oversight-logos">
+<a href="https://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=3898" target="_blank">
+<img src="/files/irc/navigator.png" alt="Charity Navigator four star charity."></a>
+<a href="https://www.charitywatch.org/ratings-and-metrics/international-rescue-committee/414" target="_blank">
+<img src="/files/irc/watch.png" alt="Charity Watch top rated."></a>
+<a href="http://www.give.org/charity-reviews/national/relief-and-development/international-rescue-committee-in-new-york-ny-3041" target="_blank">
+<img src="/files/irc/bbb.png" alt="Better Business Bureau accredited charity."></a>
+
+</p>
+					</div>
+
+
+
+		</div>
+
+
+		<div class="grid-irc-two-column-center-f">
+
+			<p class="text-links"><img src="/files/irc/footer-arrow.png" style="float:left; padding-right:10px;">
+
+The International Rescue Committee responds to the world’s worst humanitarian crises and helps people whose lives and livelihoods are shattered by conflict and disaster to survive, recover, and gain control of their future.
+			<a href="http://www.rescue.org/about">Learn more </a></p>
+
+		</div>
+	 </div>
+	</div>
+</div>
+<div class="copyright">
+<p> International Rescue Committee is a 501(c)(3) not-for-profit organization. Copyright International Rescue Committee, 2018.
+</p>
+</div>
